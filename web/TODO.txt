@@ -1,0 +1,4 @@
+jobs to write:
+one that updates sma_change and price_diff for new filings_texts
+one that build clusters from bad and good corpuses and updates it
+pip3 install -e git+git://github.com/vonHacht/yfinance.git@master#egg=yfinance 

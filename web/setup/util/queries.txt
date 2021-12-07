@@ -1,0 +1,8 @@
+
+
+select count(*) from filing_texts ft, yfinance_symbols ys where ft.yfinance_symbol_id = ys.id and ys.industry='Software—Application' and discussion_and_analysis != 'NO_MATCH';
+
+
+#COUNTS
+select count(distinct symbol) from yfinance_symbols where industry='Biotechnology' and marketcap > 500000000;
+select count(distinct ys.symbol) from filing_texts ft, yfinance_symbols ys where ft.yfinance_symbol_id = ys.id and ys.industry='Biotechnology';

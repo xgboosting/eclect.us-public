@@ -1,0 +1,38 @@
+server {
+
+        root /var/www/example.com/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name jenkins.eclect.us;
+
+        location / {
+                #try_files $uri $uri/ =404;
+                include /etc/nginx/proxy_params;
+                proxy_pass          http://localhost:8080;
+                proxy_read_timeout  90s;
+                # Fix potential "It appears that your reverse proxy setup is broken" error.
+                proxy_redirect      http://localhost:8080 https://jenkins.eclect.us;
+        }
+
+    listen [::]:443 ssl ipv6only=on; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/jenkins.eclect.us-0001/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/jenkins.eclect.us-0001/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+server {
+    if ($host = jenkins.eclect.us) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80;
+        listen [::]:80;
+
+        server_name jenkins.eclect.us;
+    return 404; # managed by Certbot
+
+
+}

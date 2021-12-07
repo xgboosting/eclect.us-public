@@ -1,0 +1,8 @@
+/notebooks/.ipynb_checkpoints/*
+__pycache__/
+data/
+sec_edgar_filings/
+web/models/*
+web/setup/models/*
+*.pyc
+tether-checker.py

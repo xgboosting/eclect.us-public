@@ -1,0 +1,117 @@
+.pages-link {
+	padding: 36px 32px;
+	display: inline-block;
+	color: #fcfcfc;
+	padding-bottom: 30px;
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.filing {
+	padding: 36px 32px;
+	display: inline-block;
+	color: #fcfcfc;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+.filing .short-name {
+	display: block;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.filing .long-name {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	color: #cccccc;
+}
+
+.filing .positive-change {
+	display: block;
+	font-weight: bold;
+	font-size: 24px;
+	color: #93F0AD;
+}
+
+.filing .negative-change {
+	display: block;
+	font-weight: bold;
+	font-size: 24px;
+	color: #ef9a9a;
+}
+
+.filing .change-hint {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	color: #cccccc;
+}
+
+.filing table {
+	color: #fcfcfc;
+	margin-top: 30px;
+}
+
+.filing table td {
+	padding-right: 48px;
+}
+
+.filing .links {
+	margin-top: 24px;
+}
+
+.filing .links a {
+	margin-right: 24px;
+	color: #cccccc;
+	font-weight: normal;
+}
+
+.filing .highlights-title {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 28px;
+}
+
+.filing .highlights {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.filing .highlights li {
+	margin-top: 16px;
+}
+
+.filing .text-loading-short {
+    width: 10%;
+	height: 20px;
+	opacity: 0.6;
+	background: #fcfcfc;
+	border-radius: 0.3rem;
+	animation-name: text-loading;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.filing .text-loading-mid {
+    width: 20%;
+	height: 20px;
+	opacity: 0.6;
+	background: #fcfcfc;
+	border-radius: 0.3rem;
+	animation-name: text-loading;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.filing .text-loading {
+    width: 80%;
+	height: 20px;
+	opacity: 0.6;
+	background: #fcfcfc;
+	border-radius: 0.3rem;
+}

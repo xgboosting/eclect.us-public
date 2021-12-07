@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: eclect.us
+Token: 8aebaec9a5974f620cfcf82b84fbb2394501cfc8bff60ed9ed1dbd8b958c8856
